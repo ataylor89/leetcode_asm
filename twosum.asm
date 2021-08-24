@@ -3,7 +3,7 @@
 
         section .text
 start:
-        mov byte r13b, 10
+        mov byte r13b, 12
         mov r8, 0
 L:
         mov r9, r8
@@ -24,7 +24,6 @@ LL:
         inc r8
         jmp L
 sum:
-        sub rsp, 8
         mov rdi, format
         mov rsi, 10
         mov rdx, r8
